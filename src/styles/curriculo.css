@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    background: #111827;
+    color: #fff;
+    padding: 40px 30px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.profile p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.sidebar-section {
+    margin-bottom: 35px;
+}
+
+.sidebar-section h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #374151;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.sidebar-section p,
+.sidebar-section li {
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+.sidebar-section ul {
+    list-style: none;
+}
+
+.sidebar-section li {
+    margin-bottom: 8px;
+}
+
+.contact a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+            color: #60a5fa;
+}
+
+/* CONTEÚDO */
+
+.content {
+    padding: 45px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #111827;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2563eb;
+}
+
+.summary {
+    color: #4b5563;
+    text-align: justify;
+}
+
+.experience {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #2563eb;
+}
+
+.experience h3 {
+    font-size: 19px;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.company {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.experience ul {
+    padding-left: 20px;
+}
+
+.experience li {
+    margin-bottom: 5px;
+    color: #4b5563;
+}
+
+.education {
+    margin-bottom: 25px;
+}
+
+.education h3 {
+    color: #111827;
+    font-size: 18px;
+}
+
+.education p {
+    color: #6b7280;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.skill {
+    background: #f3f4f6;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #374151;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech {
+    background: #2563eb;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+    .container {
+        margin: 0;
+        display: block;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* IMPRESSÃO */
+
+@media print {
+    body {
+        background: #fff;
+    }
+
+    .container {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
